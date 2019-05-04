@@ -1,4 +1,6 @@
-package stepDefinition;
+package cucumberTest.stepDefinition;
+import Page_Factory.pages.LoginPage;
+import cucumber.api.PendingException;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -9,12 +11,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.PageFactory;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.Iterator;
 
 public class MyStepdefs {
     public WebDriver driver;
+
+    //initialize page factory classes
+    LoginPage login;
 
     @Before
     public void before() {
@@ -25,22 +32,42 @@ public class MyStepdefs {
         //Put a Implicit wait, this means that any search for elements on the page could take the time the implicit wait is set for before throwing exception
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
+
+    //initialize pages
+        login = PageFactory.initElements(driver,LoginPage.class);
     }
 
     @Given("^url is launched$")
     public void url_is_launched() {
         try {
-            driver.navigate().to("http://www.google.co.in");
+            driver.get("https://katalon-demo-cura.herokuapp.com/");
             driver.wait(200);
         }catch(Exception e){
             System.out.println(e);
         }
-        /*
-       Write code here that turns the phrase above into concrete actions
-       throw new PendingException();
-       */
+
     }
-    @When("^searched for uft$")
+
+
+    @When("^user clicks on book appointment$")
+    public void user_clicks_on_book_appointment() throws Exception {
+        // Write code here that turns the phrase above into concrete actions
+        driver.findElement(By.id("btn-make-appointment")).click();
+    }
+
+    @When("^user logs in with valid uid and pwd$")
+    public void user_logs_in_with_valid_uid_and_pwd() throws Exception {
+        // Write code here that turns the phrase above into concrete actions
+        login.loginAction("John doe","ThisIsNotAPassword");
+    }
+
+    @Then("^user books (\\d+) appointments$")
+    public void user_books_appointments(int arg1) throws Exception {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    /*@When("^searched for uft$")
     public void searched_for_uft() {
         List <WebElement> links;
         String str;
@@ -74,7 +101,7 @@ public class MyStepdefs {
         System.out.println("ok");
         // Write code here that turns the phrase above into concrete actions
         //throw new PendingException();
-    }
+    }*/
 
 
 }
