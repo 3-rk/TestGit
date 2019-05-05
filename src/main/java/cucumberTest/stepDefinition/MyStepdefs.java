@@ -61,8 +61,8 @@ public class MyStepdefs {
         login.loginAction("John doe","ThisIsNotAPassword");
     }
 
-    @Then("^user books (\\d+) appointments$")
-    public void user_books_appointments(int arg1) throws Exception {
+    @Then("^user books appointments$")
+    public void user_books_appointments() throws Exception {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
