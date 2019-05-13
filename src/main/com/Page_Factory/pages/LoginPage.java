@@ -10,6 +10,7 @@ public class LoginPage {
 
     WebDriver driver;
     public LoginPage(WebDriver driver1){
+
         this.driver = driver1;
     }
 
@@ -31,6 +32,7 @@ public class LoginPage {
 
         usrId.sendKeys(uId);
         userPwd.sendKeys(usrPwd);
+
         btnLogin.click();
     }
 
