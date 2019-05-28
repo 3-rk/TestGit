@@ -6,7 +6,6 @@ import Page_Factory.pages.LoginPage;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -18,7 +17,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
 
-import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 public class Stepdefs {
@@ -32,6 +30,8 @@ public class Stepdefs {
 
     @Before
     public void before() {
+
+//        String currentDir = System.getProperty("user.dir");
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\vamankarve\\drivers_selenium\\chromedriver_win32\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("disable-infobars");
@@ -84,7 +84,7 @@ public class Stepdefs {
     @Then("^user books appointments$")
     public void user_books_appointments() throws Exception {
         apptmentPage.bookAppointment("Hongkong CURA Healthcare Center", "12/05/2019", "Test Automation appointment");
-        //test.log(LogStatus.PASS, "appointment booked successfully");
+        test.log(LogStatus.PASS, "appointment booked successfully");
     }
 
     @AfterClass

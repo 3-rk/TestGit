@@ -5,3 +5,4 @@ Feature: Login_Test
     When user clicks on book appointment
     And user logs in with valid uid and pwd
     Then user books appointments
+

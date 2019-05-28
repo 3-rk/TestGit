@@ -9,8 +9,7 @@ import org.junit.runner.RunWith;
         features = {"Feature"}
         , glue = {"stepDefinition"}
         ,plugin = {"pretty", "html:target/cucumber"}
-        , monochrome = true
-
+//        ,monochrome = true
 )
 public class TestRunner {
 

@@ -8,6 +8,13 @@
     <artifactId>SeleniumCucumberInteg</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/net.serenity-bdd/serenity-cucumber -->
+
+        <!-- https://mvnrepository.com/artifact/net.serenity-bdd/serenity-core -->
+
+        <!-- https://mvnrepository.com/artifact/net.serenity-bdd/serenity-junit -->
+
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
