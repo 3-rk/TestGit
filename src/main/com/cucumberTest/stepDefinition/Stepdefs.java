@@ -21,6 +21,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Stepdefs {
     public WebDriver driver;
+    public String currentDir;
     //initialize page factory classes
     LoginPage login;
     AppointmentsPage apptmentPage;
@@ -31,8 +32,8 @@ public class Stepdefs {
     @Before
     public void before() {
 
-//        String currentDir = System.getProperty("user.dir");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\vamankarve\\drivers_selenium\\chromedriver_win32\\chromedriver.exe");
+        currentDir = System.getProperty("user.dir");
+        System.setProperty("webdriver.chrome.driver", currentDir + "\\src\\main\\Drivers\\chromedriver_win32\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("disable-infobars");
         driver = new ChromeDriver(options);
@@ -78,7 +79,7 @@ public class Stepdefs {
     @When("^user logs in with valid uid and pwd$")
     public void user_logs_in_with_valid_uid_and_pwd() throws Exception {
         login.loginAction("John Doe", "ThisIsNotAPassword");
-        //test.log(LogStatus.PASS, "Logged into the application successfully");
+        test.log(LogStatus.PASS, "Logged into the application successfully");
     }
 
     @Then("^user books appointments$")
