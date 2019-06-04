@@ -2,34 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="144d4e05-3d7d-476e-8b94-5c9a5cb28e45" name="Default Changelist" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Page_Factory/TestCases/Tests_Suite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Page_Factory/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/Stepdefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_relevantcodes_extentreports_2_41_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_8_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_8_11_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumCucumberInteg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumCucumberInteg.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestGit.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/Page_Factory/TestCases/Tests_Suite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/Page_Factory/pages/AppointmentsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Page_Factory/pages/AppointmentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/Page_Factory/pages/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/cucumberTest/Feature/LogIn_Test.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/cucumberTest/SeleniumTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/cucumberTest/TestRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/cucumberTest/stepDefinition/Stepdefs.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Page_Factory/TestCases/Tests_Suite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Page_Factory/TestCases/Tests_Suite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/Stepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/Stepdefs.java" afterDir="false" />
     </list>
@@ -49,7 +28,11 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/Feature/LogIn_Test.feature">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -83,12 +66,12 @@
         <option value="$PROJECT_DIR$/src/main/com/cucumberTest/TestRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/Page_Factory/pages/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/Feature/LogIn_Test.feature" />
         <option value="$PROJECT_DIR$/src/test/java/Page_Factory/pages/AppointmentPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Page_Factory/TestCases/Tests_Suite.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/stepDefinition/Stepdefs.java" />
         <option value="$PROJECT_DIR$/src/test/java/java/TestRunner/TestRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/Feature/LogIn_Test.feature" />
       </list>
     </option>
   </component>
@@ -154,29 +137,6 @@
               <item name="TestGit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestGit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestGit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestGit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestGit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="stepDefinition" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestGit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestGit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="TestRunner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TestGit" type="b2602c69:ProjectViewProjectNode" />
@@ -347,19 +307,17 @@
       <option name="project" value="LOCAL" />
       <updated>1559661234696</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first commit">
+      <created>1559672656384</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559672656384</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__LogIn_Test - 2019.06.04 at 15h 36m 29s.xml">
-      <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__LogIn_Test - 2019.06.04 at 15h 44m 02s.xml">
-      <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__LogIn_Test - 2019.06.04 at 15h 51m 55s.xml">
-      <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
     <history-entry file="Feature__LogIn_Test - 2019.06.04 at 15h 53m 36s.xml">
       <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
@@ -381,6 +339,15 @@
     <history-entry file="Feature__LogIn_Test - 2019.06.04 at 23h 45m 06s.xml">
       <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
+    <history-entry file="Feature__LogIn_Test - 2019.06.04 at 23h 50m 20s.xml">
+      <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__LogIn_Test - 2019.06.04 at 23h 53m 00s.xml">
+      <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__LogIn_Test - 2019.06.04 at 23h 53m 21s.xml">
+      <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -393,8 +360,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.3184569" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.3184569" />
       <window_info id="Structure" order="1" sideWeight="0.5016611" side_tool="true" weight="0.28538102" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -403,7 +371,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7980333" visible="true" weight="0.61047465" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7980333" weight="0.61047465" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -529,7 +497,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/Feature/LogIn_Test.feature">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
