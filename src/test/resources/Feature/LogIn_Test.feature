@@ -7,8 +7,6 @@ Feature: Login_Test
     Then user books appointments with data
       | facilityName                    | dateOfappt | comments                    |
       | Hongkong CURA Healthcare Center | 12/05/2019 | Test Automation appointment |
-      | Tokyo CURA Healthcare Center    | 03/06/2019 | Test automation appt        |
-      | Tokyo CURA Healthcare Center  | 05/06/2019 | Test automation appt        |
 
     Examples:
       | uid      | pwd                |
