@@ -9,8 +9,7 @@
         <module name="TestGit" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="SeleniumCucumberInteg" target="1.8" />
+    <bytecodeTargetLevel target="8">
       <module name="TestGit" target="1.8" />
     </bytecodeTargetLevel>
   </component>

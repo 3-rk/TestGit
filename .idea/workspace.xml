@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="144d4e05-3d7d-476e-8b94-5c9a5cb28e45" name="Default Changelist" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+    <list default="true" id="144d4e05-3d7d-476e-8b94-5c9a5cb28e45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/Drivers/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RestTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestGit.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/cucumberTest/SeleniumTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Page_Factory/TestCases/Tests_Suite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Page_Factory/TestCases/Tests_Suite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/Stepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/Stepdefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Feature/LogIn_Test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Feature/LogIn_Test.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,10 +25,20 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/Feature/LogIn_Test.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinition/Stepdefs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="39">
+              <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+              <folding>
+                <element signature="method#before#0;class#Stepdefs#0" />
+                <element signature="e#1167#2027#0" />
+                <element signature="e#2048#2092#0" />
+                <element signature="method#startTest#0;class#Stepdefs#0" />
+                <element signature="method#url_is_launched#0;class#Stepdefs#0" />
+                <element signature="method#user_clicks_on_book_appointment#0;class#Stepdefs#0" />
+                <element signature="e#3468#3520#0" />
+                <element signature="method#userLogsInWithValidAnd#0;class#Stepdefs#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,10 +76,12 @@
         <option value="$PROJECT_DIR$/src/test/java/Page_Factory/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Page_Factory/pages/AppointmentPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Page_Factory/TestCases/Tests_Suite.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/stepDefinition/Stepdefs.java" />
         <option value="$PROJECT_DIR$/src/test/java/java/TestRunner/TestRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinition/Stepdefs.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Feature/LogIn_Test.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/Rest1.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/RestTest.java" />
       </list>
     </option>
   </component>
@@ -86,6 +96,11 @@
         <option name="importAutomatically" value="true" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="nexus" />
+      </list>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -103,6 +118,11 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="SeleniumCucumberInteg" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SeleniumCucumberInteg" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
@@ -138,27 +158,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="TestGit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestGit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestGit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestGit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Feature" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -167,11 +172,11 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/Feature" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Imp Software/easygson-1.0.0.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -200,7 +205,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Cucumber java.Feature: LogIn_Test">
-    <configuration name="Feature: LogIn_Test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: LogIn_Test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" activateToolWindowBeforeRun="false" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.202.08\jre" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="CUCUMBER_CORE_VERSION" value="3" />
@@ -208,7 +213,6 @@
       <option name="GLUE" value="stepDefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="TestGit" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: LogIn_Test" />
       <extension name="coverage">
         <pattern>
@@ -216,6 +220,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <module name="TestGit" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestGit" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RestTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -246,17 +265,23 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="Tests_Suite" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumCucumberInteg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Page_Factory.TestCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Page_Factory.TestCases" />
-      <option name="MAIN_CLASS_NAME" value="Page_Factory.TestCases.Tests_Suite" />
+    <configuration name="RestTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestGit" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RestTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestTest.GetWeatherDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestGit" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RestTest" />
+      <option name="METHOD_NAME" value="GetWeatherDetails" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -265,13 +290,17 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber java.Feature: LogIn_Test" />
+      <item itemvalue="JUnit.RestTest" />
       <item itemvalue="Maven.SeleniumCucumberInteg [clean,test]" />
-      <item itemvalue="TestNG.Tests_Suite" />
+      <item itemvalue="TestNG.RestTest" />
+      <item itemvalue="TestNG.RestTest.GetWeatherDetails" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber java.Feature: LogIn_Test" />
-        <item itemvalue="TestNG.Tests_Suite" />
+        <item itemvalue="TestNG.RestTest.GetWeatherDetails" />
+        <item itemvalue="TestNG.RestTest" />
+        <item itemvalue="JUnit.RestTest" />
       </list>
     </recent_temporary>
   </component>
@@ -314,38 +343,52 @@
       <option name="project" value="LOCAL" />
       <updated>1559672656384</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="first commit">
+      <created>1559673357407</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559673357407</updated>
+    </task>
+    <task id="LOCAL-00006" summary="first commit">
+      <created>1559673514322</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559673514322</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__LogIn_Test - 2019.06.04 at 15h 53m 36s.xml">
-      <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="RestTest_GetWeatherDetails - 2019.08.12 at 11h 02m 27s.xml">
+      <configuration name="RestTest.GetWeatherDetails" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Feature__LogIn_Test - 2019.06.04 at 15h 56m 29s.xml">
-      <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="RestTest_GetWeatherDetails - 2019.08.12 at 11h 04m 26s.xml">
+      <configuration name="RestTest.GetWeatherDetails" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Feature__LogIn_Test - 2019.06.04 at 16h 06m 35s.xml">
-      <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="RestTest_GetWeatherDetails - 2019.08.12 at 11h 04m 51s.xml">
+      <configuration name="RestTest.GetWeatherDetails" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Feature__LogIn_Test - 2019.06.04 at 20h 06m 43s.xml">
-      <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="RestTest_GetWeatherDetails - 2019.08.12 at 11h 07m 30s.xml">
+      <configuration name="RestTest.GetWeatherDetails" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Feature__LogIn_Test - 2019.06.04 at 23h 37m 19s.xml">
-      <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="RestTest_GetWeatherDetails - 2019.08.12 at 11h 08m 58s.xml">
+      <configuration name="RestTest.GetWeatherDetails" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Feature__LogIn_Test - 2019.06.04 at 23h 42m 13s.xml">
-      <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="RestTest_GetWeatherDetails - 2019.08.12 at 11h 15m 03s.xml">
+      <configuration name="RestTest.GetWeatherDetails" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Feature__LogIn_Test - 2019.06.04 at 23h 45m 06s.xml">
-      <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="RestTest_GetWeatherDetails - 2019.08.12 at 17h 02m 33s.xml">
+      <configuration name="RestTest.GetWeatherDetails" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Feature__LogIn_Test - 2019.06.04 at 23h 50m 20s.xml">
-      <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="RestTest_GetWeatherDetails - 2019.08.12 at 17h 06m 29s.xml">
+      <configuration name="RestTest.GetWeatherDetails" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Feature__LogIn_Test - 2019.06.04 at 23h 53m 00s.xml">
-      <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="RestTest_GetWeatherDetails - 2019.08.12 at 17h 07m 31s.xml">
+      <configuration name="RestTest.GetWeatherDetails" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Feature__LogIn_Test - 2019.06.04 at 23h 53m 21s.xml">
+    <history-entry file="Feature__LogIn_Test - 2019.09.05 at 22h 51m 08s.xml">
       <configuration name="Feature: LogIn_Test" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
@@ -360,9 +403,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.3184569" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.30181542" />
       <window_info id="Structure" order="1" sideWeight="0.5016611" side_tool="true" weight="0.28538102" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -371,14 +413,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7980333" weight="0.61047465" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7950076" weight="0.36824876" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32733223" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32733223" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.28895614" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.7110439" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.20499243" side_tool="true" weight="0.4599018" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.71028745" visible="true" weight="0.7217676" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32569557" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
@@ -418,6 +460,46 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
@@ -438,38 +520,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Page_Factory/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ExtentReportResults.html" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Page_Factory/TestCases/Tests_Suite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="53" column="6" lean-forward="true" selection-start-line="53" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/Page_Factory/pages/AppointmentsPage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/resources/LogIn_Test.feature" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/resources/Feature/LogIn_Test.feature" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Rest1.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="373">
+          <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
           <folding>
             <element signature="n#build#0;n#project#0;n#!!top" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Page_Factory/pages/AppointmentPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java">
@@ -479,27 +541,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinition/Stepdefs.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Feature/LogIn_Test.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExtentReportResults.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/resources/Feature/LogIn_Test.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Page_Factory/pages/AppointmentPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        <state>
+          <folding>
+            <element signature="e#1617#1618#0" expanded="true" />
+            <element signature="e#1659#1660#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Feature/LogIn_Test.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Page_Factory/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        <state relative-caret-position="301">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="method#loginAction#0;class#LoginPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Page_Factory/TestCases/Tests_Suite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinition/Stepdefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+          <folding>
+            <element signature="method#before#0;class#Stepdefs#0" />
+            <element signature="e#1167#2027#0" />
+            <element signature="e#2048#2092#0" />
+            <element signature="method#startTest#0;class#Stepdefs#0" />
+            <element signature="method#url_is_launched#0;class#Stepdefs#0" />
+            <element signature="method#user_clicks_on_book_appointment#0;class#Stepdefs#0" />
+            <element signature="e#3468#3520#0" />
+            <element signature="method#userLogsInWithValidAnd#0;class#Stepdefs#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -560,7 +665,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -591,5 +695,9 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="clean test" />
   </component>
 </project>
