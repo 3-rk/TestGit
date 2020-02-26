@@ -1,14 +1,13 @@
 package Page_Factory.TestCases;
 
+import Page_Factory.pages.LoginPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import Page_Factory.pages.LoginPage;
 
 import java.util.concurrent.TimeUnit;
 
