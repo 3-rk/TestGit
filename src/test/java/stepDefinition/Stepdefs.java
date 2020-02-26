@@ -26,6 +26,8 @@ import java.util.concurrent.TimeUnit;
 
 public class Stepdefs {
     public WebDriver driver;
+
+    public String apptID;
     //initialize page factory classes
     LoginPage login;
     AppointmentPage apptmentPage;
@@ -37,20 +39,20 @@ public class Stepdefs {
     @Before
     public void before() {
         try {
-            String dirpath = System.getProperty( "user.dir" );
-            System.setProperty( "webdriver.chrome.driver", dirpath + "\\src\\main\\Drivers\\chromedriver.exe" );
+            String dirpath = System.getProperty("user.dir");
+            System.setProperty("webdriver.chrome.driver", dirpath + "\\src\\main\\Drivers\\chromedriver.exe");
             ChromeOptions options = new ChromeOptions();
-            options.addArguments( "disable-infobars" );
-            driver = new ChromeDriver( options );
+            options.addArguments("disable-infobars");
+            driver = new ChromeDriver(options);
             //Put a Implicit wait, this means that any search for
             //elements on the page could take the time the implicit wait is
             //set for before throwing exception
-            driver.manage().timeouts().implicitlyWait( 10, TimeUnit.SECONDS );
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driver.manage().window().maximize();
 
             //initialize pages
-            login = PageFactory.initElements( driver, LoginPage.class );
-            apptmentPage = PageFactory.initElements( driver, AppointmentPage.class );
+            login = PageFactory.initElements(driver, LoginPage.class);
+            apptmentPage = PageFactory.initElements(driver, AppointmentPage.class);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -60,19 +62,19 @@ public class Stepdefs {
 
     @Before
     public static void startTest() {
-        String curDir = System.getProperty( "user.dir" );
-        System.out.println( curDir + "\\learn_automation1.html" );
-        reporter = new ExtentHtmlReporter( curDir + "\\learn_automation1.html" );
+        String curDir = System.getProperty("user.dir");
+        System.out.println(curDir + "\\Reports\\learn_automation1.html");
+        reporter = new ExtentHtmlReporter(curDir + "\\Reports\\learn_automation1.html");
 
         // Create object of ExtentReports class- This is main class which will create report
         extent = new ExtentReports();
 
         // attach the reporter which we created in Step 1
-        extent.attachReporter( reporter );
+        extent.attachReporter(reporter);
 
 
         // call createTest method and pass the name of TestCase- Based on your requirement
-        test = extent.createTest( "LoginTest" );
+        test = extent.createTest("LoginTest");
     }
 
     @Given("^url is launched$")
@@ -80,11 +82,11 @@ public class Stepdefs {
         // Write code here that turns the phrase above into
         //concrete actions
         try {
-            driver.get( "https://katalon-demo-cura.herokuapp.com/" );
-            driver.wait( 300 );
-            test.log( Status.PASS, "Navigated to the specified URL" );
+            driver.get("https://katalon-demo-cura.herokuapp.com/");
+            driver.wait(300);
+            test.log(Status.PASS, "Navigated to the specified URL");
         } catch (Exception e) {
-            System.out.println( e );
+            System.out.println(e);
         }
 
     }
@@ -93,7 +95,7 @@ public class Stepdefs {
     public void user_clicks_on_book_appointment() throws Exception {
         // Write code here that turns the phrase above into
         //concrete actions
-        driver.findElement( By.id( "btn-make-appointment" ) ).click();
+        driver.findElement(By.id("btn-make-appointment")).click();
 
     }
 
@@ -118,10 +120,10 @@ public class Stepdefs {
     public void userLogsInWithValidAnd(String arg0, String arg1) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         try {
-            login.loginAction( arg0, arg1 );
-            test.log( Status.PASS, "Logged into the application successfully" );
+            login.loginAction(arg0, arg1);
+            test.log(Status.PASS, "Logged into the application successfully");
         } catch (Exception e) {
-            System.out.println( e );
+            System.out.println(e);
         }
     }
 
@@ -132,20 +134,26 @@ public class Stepdefs {
         // For automatic transformation, change DataTable to one of
         // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
         // E,K,V must be a scalar (String, Integer, Date, enum etc)
-        List<List<String>> list = arg1.asLists( String.class );
+        List<List<String>> list = arg1.asLists(String.class);
         for (int i = 1; i < list.size(); i++) {
-            String fname = list.get( i ).get( 0 );
-            String dtofappt = list.get( i ).get( 1 );
-            String txtcomment = list.get( i ).get( 2 );
-            System.out.println( fname );
-            apptmentPage.bookAppointment( fname, dtofappt, txtcomment );
-            test.log( Status.PASS, "appointment booked " + i + "successfully" );
+            String fname = list.get(i).get(0);
+            String dtofappt = list.get(i).get(1);
+            String txtcomment = list.get(i).get(2);
+            apptID = "1000" + i;
+            System.out.println(fname);
+            apptmentPage.bookAppointment(fname, dtofappt, txtcomment + apptID);
+            test.log(Status.PASS, "appointment booked " + i + "successfully");
             //reinit elements to re initialize dom
-            apptmentPage = PageFactory.initElements( driver, AppointmentPage.class );
+            apptmentPage = PageFactory.initElements(driver, AppointmentPage.class);
             driver.navigate().refresh();
         }
-        driver.close();
-
+        //driver.close();
+        driver.findElement(By.xpath("//*[@id='menu-toggle']")).click();
+        driver.findElement(By.xpath("//*[@id='sidebar-wrapper']/ul/li[3]/a")).click();
+        String aptid = driver.findElement(By.xpath("//*[@id='comment']")).getText();
+        System.out.println(aptid + aptid.length());
+        String id = aptid.substring(aptid.length() - 5);
+        System.out.println(id);
     }
 
 

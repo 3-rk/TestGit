@@ -9,9 +9,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/test/resources/Feature"}
         , glue = {"src/test/java/stepDefinition"}
-        , plugin = {"pretty", "html:target/cucumber"}
+        , plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}
         , monochrome = true
-//        ,dryRun = false
+
 )
 public class TestRunner {
 
